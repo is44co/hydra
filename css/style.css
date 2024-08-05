@@ -1,6 +1,7 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 body{
     background-color: #0F172A;
@@ -275,7 +276,7 @@ padding: 0 1px;
     max-width: 100%;
 }
 .power{
-    margin-top: 7rem;
+    margin-top: 5rem;
     display: flex;
     gap: 3rem;
    flex-wrap: wrap;
@@ -309,7 +310,7 @@ width: 50%;
    justify-content: center;
  
     margin-left: 7rem;
- flex: 1;
+
 }
 .pright{
 width: 50%;
@@ -356,9 +357,13 @@ width: 50%;
     overflow-x: hidden;
 .discover{
 
-    padding: 0 20px;
+    /* padding: 0 20px; */
     flex-direction: column;
     align-items: center;
+}
+.dleft h2 {
+    width: 100%;
+    font-size: 6rem;
 }
 .join h1{
     font-size: 2rem;
@@ -381,11 +386,11 @@ justify-content: center;
 align-items: center;
 transform: translateX(-11%);
  
-    width: 100%;
+  max-width:100%;
 
 }
 .dright img{
-    /* margin-right: 8rem; */
+ width: 100%;
 }
 .dleft h2{
     font-size: 2rem;
@@ -416,17 +421,17 @@ transform: translateX(-11%);
 /* media qeries */
 @media (max-width:740px){
  
-.power img{
+/* .power img{
     margin: 0 30px;
-}
+} */
     .hero{
         margin-top: 1rem;
 
     
     }
 .dright{
-    max-width: 85%;
-    width: 50%;
+    /* max-width: 85%; */
+    width: 100%;
 overflow: hidden;    
 }
 .dright img{
@@ -448,6 +453,10 @@ i{
     transition: all  1s ease-in-out;
    
 }
+.container{
+    margin: 0 auto;
+    padding:  0 10px;
+}
  nav i{
     font-size: 3rem;
     position: absolute;
@@ -456,6 +465,22 @@ right: 12px;
     z-index: 2;
   
   
+}
+.power h2{
+    font-size: 2rem;
+    width: 70%;
+}
+.power img{
+max-width: 100%;
+
+}
+.pright{
+    width: 70%;
+    max-width: 90%;
+}
+
+nav{
+    margin: 0 auto;
 }
 input{
 
@@ -474,7 +499,9 @@ input{
 
     transition: all 1ms ease-in-out;
 }
-
+.h21{
+    font-size:8rem ;
+}
 
  .hide {
     position: absolute;
@@ -533,17 +560,82 @@ input{
  .join h1{
     margin: 10px 30px;
  }
- .join .joinfooter{
+ /* .join .joinfooter{
     padding: 10px 40px;
- }
+ } */
 .smart{
     margin: 0 auto;
 }
 .joincard{
     margin: 0 auto;
 }
+.join{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0   auto;
+}
+.join h1{
+    margin-left: 30px;
+    text-align: center;
+}
+.discover{
+    display: block;
+   
+
 
 }
+.dright{
+    padding-left: 11%;
+    margin-top: 2rem;
+}
+/* .discover h2{
+    font-size: 2rem;
+    width: 100%;
+} */
+.dleft{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.dleft p{
+    width:100% ;
+}
+.pheader{
+    padding: 0;
+}
+.power{
+    margin-top: 1rem;
+  /* display: flex; */
+  /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 100%;
+    display: block;
+    overflow-x: hidden;
+}
+.pleft p{
+
+  text-align: start;
+  width: 100%;
+
+}
+.pleft{
+    text-align: start;
+    width: 100%;
+ 
+margin: 0 auto;
+}
+.dleft{
+    text-align: start;
+    width: 100%;
+ 
+margin: 0 auto;
+}
+}
+.pright{
+    padding-left: 5%;
+}
+
 /* end of media queries */
 
  
